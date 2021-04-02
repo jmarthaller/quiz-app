@@ -4,4 +4,4 @@ A simple quiz application built to teach myself TypeScript. Utilizes the Open Tr
 
 To use, run:
 
-npm install && npm start
+`npm install && npm start`
