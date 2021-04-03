@@ -1,4 +1,4 @@
-TypeScript Quiz App
+#TypeScript Quiz App
 
 A simple quiz application built to teach myself TypeScript. Utilizes the Open Trivia DB API for quiz information.
 
