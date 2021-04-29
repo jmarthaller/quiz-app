@@ -1,6 +1,6 @@
 # TypeScript Quiz App
 
-A simple quiz application built to teach myself TypeScript. Utilizes the Open Trivia DB API for quiz information.
+A quiz application built to teach myself TypeScript. Utilizes the Open Trivia DB API for quiz information.
 
 To use this app on your local machine, clone repo and run:
 
