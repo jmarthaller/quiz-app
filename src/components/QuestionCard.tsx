@@ -12,7 +12,6 @@ type Props = {
 }
 
 
-
 const QuestionCard: React.FC<Props> = ({ question, answers, callback, userAnswer, questionNumber, totalQuestions }) => (
     
     <Wrapper>
@@ -32,7 +31,6 @@ const QuestionCard: React.FC<Props> = ({ question, answers, callback, userAnswer
           ))}
       </div>
     </Wrapper>
-    
     );
 
 
