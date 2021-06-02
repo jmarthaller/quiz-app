@@ -3,11 +3,7 @@ let y = "Jacob";
 console.log(typeof x);
 console.log(typeof y);
 
-x = undefined;
+x = 'Jacob on software';
 y = false;
 console.log(typeof x);
 console.log(typeof y);
-
-
-
-
