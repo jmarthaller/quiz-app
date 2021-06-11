@@ -2,7 +2,7 @@
 
 A quiz application built to teach myself TypeScript. Utilizes the Open Trivia DB API for quiz information.
 
-To use the app locally, clone this repo and run:
+To use the app on your machine, clone this repo and run:
 
 `npm install && npm start`
 
