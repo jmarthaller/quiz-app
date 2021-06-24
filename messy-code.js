@@ -1,3 +1,4 @@
+// Take out comments for later
 // let x = 100;
 // let y = "Jacob";
 // console.log(typeof x);
