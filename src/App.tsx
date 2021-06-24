@@ -36,13 +36,13 @@ const App = () => {
     setLoading(false);
   }
 
-  const checkAnswer = (e: React.MouseEvent<HTMLButtonElement>) => {
+  const checkUserAnswerForCorrectness = (e: React.MouseEvent<HTMLButtonElement>) => {
     if (!gameOver) {
       const answer = e.currentTarget.value;
 
       const correct = questions[number].correct_answer === answer;
 
-      if (correct) setScore(prev => prev + 1);
+      if (correct) setScore(previous => previous + 1);
 
       const answerObject = {
         question: questions[number].question,
@@ -50,7 +50,7 @@ const App = () => {
         correct,
         correctAnswer: questions[number].correct_answer,
       };
-      setUserAnswers(prev => [...prev, answerObject])
+      setUserAnswers(previous => [...previous, answerObject])
     }
   }
 
@@ -84,7 +84,7 @@ const App = () => {
             question={questions[number].question}
             answers={questions[number].answers}
             userAnswer={userAnswers ? userAnswers[number] : undefined }
-            callback={checkAnswer}
+            callback={checkUserAnswerForCorrectness}
           />
 
         )}
