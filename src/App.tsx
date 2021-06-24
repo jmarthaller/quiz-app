@@ -23,6 +23,8 @@ const App = () => {
 
   console.log(questions)
 
+
+
   const startTrivia = async () => {
     setLoading(true);
     setGameOver(false);
@@ -53,6 +55,7 @@ const App = () => {
       setUserAnswers(previous => [...previous, answerObject])
     }
   }
+
 
   const nextQuestion = () => {
     const nextQuestion = number + 1;
