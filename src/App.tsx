@@ -24,13 +24,17 @@ const App = () => {
   console.log(questions)
 
 
-
+  // Start the trivia game
   const startTrivia = async () => {
+    // Set loading state to true
     setLoading(true);
+    // Set game over state to false
     setGameOver(false);
 
+    // Fetched questions from API
     const newQuestions = await fetchQuizQuestions(TOTAL_QUESTIONS, Difficulty.EASY);
 
+    // Set state for game to run properly 
     setQuestions(newQuestions);
     setScore(0);
     setUserAnswers([]);
