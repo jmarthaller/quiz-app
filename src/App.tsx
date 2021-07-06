@@ -40,6 +40,9 @@ const App = () => {
 
 
 
+  const shuffleArray = (array: any) => {
+    return [...array].sort(() => Math.random() - 0.5);
+  }
 
   const fetchQuizQuestions = async (amount: number, difficulty: Difficulty) => {
     const endpoint = `https://opentdb.com/api.php?amount=${amount}&difficulty=${difficulty}&type=multiple`;
