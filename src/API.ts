@@ -1,4 +1,4 @@
-import { shuffleArray } from './utils';
+// import { shuffleArray } from './utils';
 
 export type Question = {
     category: string;
@@ -18,6 +18,9 @@ export enum Difficulty {
     HARD = "hard",
 }
 
+const shuffleArray = (array: any) => {
+    return [...array].sort(() => Math.random() - 0.5);
+}
 
 export const fetchQuizQuestions = async (amount: number, difficulty: Difficulty) => {
     const endpoint = `https://opentdb.com/api.php?amount=${amount}&difficulty=${difficulty}&type=multiple`;

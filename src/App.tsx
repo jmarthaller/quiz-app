@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import QuestionCard from './components/QuestionCard';
-import { fetchQuizQuestions, Question } from './API';
+import { fetchQuizQuestions } from './API';
 import { QuestionState, Difficulty } from './API';
 import { GlobalStyle, Wrapper } from './App.styles';
-import { shuffleArray } from './utils';
 
 export type AnswerObject = {
   question: string;
@@ -37,28 +36,6 @@ const App = () => {
     setNumber(0);
     setLoading(false);
   }
-
-
-
-  const shuffleArray = (array: any) => {
-    return [...array].sort(() => Math.random() - 0.5);
-  }
-
-  const fetchQuizQuestions = async (amount: number, difficulty: Difficulty) => {
-    const endpoint = `https://opentdb.com/api.php?amount=${amount}&difficulty=${difficulty}&type=multiple`;
-    const data = await (await fetch(endpoint)).json();
-    
-    return data.results.map((question: Question) =>  ({
-      ...question,
-      answers: shuffleArray([...question.incorrect_answers, question.correct_answer])
-    }
-    ))
-  }
-
-
-
-
-
 
   const checkUserAnswerForCorrectness = (e: React.MouseEvent<HTMLButtonElement>) => {
     if (!gameOver) {
