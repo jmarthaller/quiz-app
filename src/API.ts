@@ -31,4 +31,3 @@ export const fetchQuizQuestions = async (
   }));
 };
 
-// https://opentdb.com/api.php?amount=10&category=24&type=multiple
