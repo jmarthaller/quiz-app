@@ -11,6 +11,7 @@ export type AnswerObject = {
   correctAnswer: string;
 }
 
+
 const TOTAL_QUESTIONS = 10
 
 const App = () => {
